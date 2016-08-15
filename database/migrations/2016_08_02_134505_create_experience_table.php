@@ -23,8 +23,7 @@ class CreateExperienceTable extends Migration
             $table->timestamp('starting_date');
             // timestamp, end date
             $table->timestamp('end_date');
-             // string, file location for image snippet
-            $table->string('end_date');
+            
              //int, foreign key job_id
             $table->integer('jobseeker_id')->unsigned();
             $table->foreign('jobseeker_id')->references('id')->on('jobseekers');

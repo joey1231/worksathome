@@ -22,7 +22,7 @@ class CreateJobsTable extends Migration
             // string, Salary on jobs
             $table->string('salary');
             // tinyInt, Job Type 0 - freelance, 1 - Fulltime
-            $table->tinyInt('job_type');
+            $table->tinyInteger('job_type');
             //int, foreign key employeer_id
             $table->integer('employeer_id')->unsigned();
             $table->foreign('employeer_id')->references('id')->on('employeers');

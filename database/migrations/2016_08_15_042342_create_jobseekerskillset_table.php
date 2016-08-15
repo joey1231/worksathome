@@ -18,7 +18,7 @@ class CreateJobseekerskillsetTable extends Migration
             // STRING, NAME of SKILLSET
             $table->string('name')->unique();
             // STRING, rate of SKILLSET 0 is lowest 10 is highest
-            $table->int('rate');
+            $table->integer('rate');
              //int, foreign key job_id
             $table->integer('job_id')->unsigned();
             $table->foreign('job_id')->references('id')->on('jobs');
